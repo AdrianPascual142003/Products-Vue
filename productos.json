@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Tv calabaza",
+      "uds": 18,
+      "price": 20,
+      "id": 3
+    },
+    {
+      "name": "Tv calabazaaa",
+      "uds": 38,
+      "price": 12,
+      "id": 4
+    },
+    {
+      "name": "Tv gormiti",
+      "uds": 1190,
+      "price": 120,
+      "id": 5
+    }
+  ]
+}
