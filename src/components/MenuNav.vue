@@ -10,11 +10,11 @@
             <span class="navbar-brand" href="#">Almacén ACME</span>
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Productos</a>
-                    <a class="nav-link" href="#">Categorías</a>
-                    <a class="nav-link" href="#">Añadir producto</a>
-                    <a class="nav-link" href="#">Añadir categoría</a>
-                    <a class="nav-link" href="#">Sobre nosotros</a>
+                    <router-link class="nav-link" to="/">Productos</router-link>
+                    <router-link class="nav-link" to="/categories">Categorias</router-link>
+                    <router-link class="nav-link" to="/addproduct">Añadir producto</router-link>
+                    <router-link class="nav-link" to="/categoryForm">Añadir categoría</router-link>
+                    <router-link class="nav-link" to="/about">Sobre nosotros</router-link>
                 </div>
             </div>
         </div>

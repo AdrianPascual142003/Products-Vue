@@ -1,22 +1,37 @@
 {
   "products": [
     {
-      "name": "Tv calabaza",
-      "uds": 18,
-      "price": 20,
-      "id": 3
-    },
-    {
-      "name": "Tv calabazaaa",
-      "uds": 38,
+      "name": "Raton Gaming",
+      "uds": 23,
       "price": 12,
-      "id": 4
+      "category": 1,
+      "id": 1
     },
     {
-      "name": "Tv gormiti",
-      "uds": 1190,
-      "price": 120,
-      "id": 5
+      "name": "Casco Gaming",
+      "uds": 17,
+      "price": 222,
+      "category": 1,
+      "id": 2
+    },
+    {
+      "name": "Hojas A4",
+      "category": 2,
+      "uds": 12,
+      "price": 12,
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Informatica",
+      "desc": "Productos de informatica"
+    },
+    {
+      "id": 2,
+      "name": "Oficina",
+      "desc": "Productos de oficina"
     }
   ]
 }

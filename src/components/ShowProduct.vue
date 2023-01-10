@@ -24,9 +24,6 @@ import { store } from '../store';
                 productNew.uds += 1
                 store.editProduct(productNew)
             },
-            editProduct() {
-               // dataProduct.editProduct(this.product)
-            }
         }
     }
 </script>
@@ -35,13 +32,14 @@ import { store } from '../store';
     <tr class="text-center">
         <td>{{product.id}}</td>
         <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
         <td>{{product.uds}}</td>
         <td>{{product.price}}€</td>
         <td>{{calcImport()}}€</td>
         <td>
             <button class="btn btn-warning m-1" v-on:click="changeUdsUp"><i class="bi bi-caret-up-fill"></i></button>
             <button class="btn btn-warning" v-on:click="changeUdsDown" :disabled="product.uds === 0"><i class="bi bi-caret-down-fill"></i></button>
-            <button class="btn btn-warning m-1" v-on:click="editProduct"><i class="bi bi-pencil"></i></button>
+            <router-link class="btn btn-warning m-1" :to="{ name: 'Editar Producto', params:{id: product.id}}"><i class="bi bi-pencil"></i></router-link>
             <button class="btn btn-warning" v-on:click="deleteProduct"><i class="bi bi-trash"></i></button>
         </td>
     </tr>

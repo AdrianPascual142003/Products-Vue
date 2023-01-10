@@ -4,6 +4,7 @@ import ProductFormVue from "./components/ProductForm.vue";
 import { store } from "./store";
 import ErrorDiv from "./components/ErrorDiv.vue";
 import MenuNav from "./components/MenuNav.vue";
+import TableCategories from "./components/TableCategories.vue";
 
 
 export default {
@@ -11,10 +12,12 @@ export default {
     TablaProductosVue,
     ProductFormVue,
     ErrorDiv,
-    MenuNav
+    MenuNav,
+    TableCategories
 },
     mounted() {
         store.loadProducts();
+        store.loadCategories();
     }
 }
 </script>
@@ -23,7 +26,8 @@ export default {
     <div class="container">
         <menu-nav></menu-nav>
         <error-div></error-div>
-        <tabla-productos-vue></tabla-productos-vue>
-        <product-form-vue></product-form-vue>
+        <!-- <tabla-productos-vue></tabla-productos-vue>  -->
+        <!-- <product-form-vue></product-form-vue> -->
+        <router-view :key="$route.fullPath"></router-view>
     </div>
 </template>
